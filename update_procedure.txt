@@ -1,0 +1,18 @@
+# DO CHANGES IN MY_WEB AS NEEDED
+# and commit them
+
+git add .
+git commit -m "Initial commit"
+git push -u origin master
+
+## THEN REGENERATE THE HTML CODE FOR THE SITE
+
+hugo
+cd public
+git add .
+git commit -m "Build website"
+git push origin master
+cd ..
+
+
+### ACCORDING TO THIS: https://sourcethemes.com/academic/docs/deployment/
