@@ -16,3 +16,12 @@ cd ..
 
 
 ### ACCORDING TO THIS: https://sourcethemes.com/academic/docs/deployment/
+
+
+# ALSO TO UPDATE THE PUBLICATIONS DO THE FOLLOWING:
+# RUN
+
+python3 python2hugo.py -i bibl.bib
+
+# AND COPY OVER THE GENERATED FILES FROM ./publ to the content publications files
+# You can also add tags and projects to each one!
