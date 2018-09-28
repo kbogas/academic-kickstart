@@ -34,12 +34,15 @@ filter_default = 0
   tag = "*"
 
 [[filter]]
-  name = "Deep Learning"
-  tag = "Deep Learning"
+  name = "Biomedical"
+  tag = "Biomedical"
 
 [[filter]]
-  name = "Other"
-  tag = "Demo"
+  name = "Graph"
+  tag = "Graph"
 
+[[filter]]
+  name = "Machine Learning"
+  tag = "ML"
 +++
 
