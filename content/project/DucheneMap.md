@@ -9,7 +9,7 @@ title = "DuchenneMap"
 summary = "Connect the Duchenne world to advance development in DMD healthcare"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-image_preview = "headers/duchennemap_log.png"
+image_preview = "headers/duchennemap_logo.jpg"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
@@ -24,7 +24,7 @@ math = false
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = "headers/duchennemap_log.png"
+image = "headers/duchennemap_logo.jpg"
 caption = "DuchenneMap"
 
 +++
