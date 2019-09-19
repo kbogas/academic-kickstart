@@ -13,14 +13,16 @@ weight = 5
     "Machine Learning",
     "Data Science",
     "Natural Language Processing",
-    "Biomedical"
+    "Biomedical",
+    "Graph Analysis",
+    "Learning Representations"
   ]
 
 # List your qualifications (such as academic degrees).
-#[[education.courses]]
-#  course = "PhD in Artificial Intelligence"
-#  institution = "Stanford University"
-#  year = 2012
+[[education.courses]]
+   course = "Ph.D. Candidate in Computer Science"
+   institution = "NKUA and NCSR 'Demokritos', Athens"
+   year = 2019
 
 [[education.courses]]
   course = "Diploma (5-year old, B.Sc + M.Sc combined),in Electrical and Computer Engineering, Grade: 8.05/10 (Thesis 10/10)"
@@ -35,5 +37,12 @@ weight = 5
 Welcome to my personal page!
 
 
-I am an Electrical and Computer Systems Engineer and my primary focus is
-data science and machine learning. I hold a research associate position at the Institute of Informatics and Telecommunications of the National Center for Scientific Research “Demokritos”, where I am involved in international projects. I work along the Software and Knowledge Engineering Laboratory and I conduct research under the guidance of Dr. Georgios Paliouras. I am mostly intrested in classical machine learning, basic research and applications on text and the biomedical domain.
+I am a Ph.D. candidate in Computer Science and my primary focus is
+data science and machine learning. I hold a research associate position with the [Institute of Informatics and Telecommunications](https://www.iit.demokritos.gr/) of the [National Center for Scientific Research “Demokritos”](http://www.demokritos.gr/), where I am involved in international projects.
+
+I work along the Software and Knowledge Engineering Laboratory and I conduct research under the guidance of [Dr. Georgios Paliouras](http://users.iit.demokritos.gr/~paliourg/).
+I am mostly interested in machine learning, data mining and NLP. Currently, my focus is graph neural networks and their applications on heterogenous/multi-relational graphs, mainly on bio-related data.
+
+
+I hold a Diploma (5-years combined B.Sc. and M.Sc.) from the school of [Electrical and Computer Engineering](https://www.ece.ntua.gr/en) at the [National Technical University of Athens](https://www.ntua.gr/en/).
+
