@@ -50,7 +50,7 @@ enableGitInfo = false
 [params]
   # Color theme.
   #   Choose from `default`, `ocean`, `forest`, `coffee`, `dark`, or `1950s`.
-  color_theme = "dark"
+  color_theme = "coffee"
 
   # Font style.
   #   Choose from `default`, `classic`, or `playfair`.
@@ -69,7 +69,7 @@ enableGitInfo = false
   email = "bogas.ko@gmail.com"
   address = "Building 1 Room 1, NCSR 'Demokritos', Athens, Greece, Ag. Paraskevi, 15310, Athens, Greece"
   office_hours = "Every day 11:00-19:00, email for appointment"
-  phone = ""
+  phone = "+306931693844"
   skype = "bogas_k"
   telegram = ""
 
