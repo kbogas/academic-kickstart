@@ -6,14 +6,14 @@ date = 2018-04-27T00:00:00
 title = "BioASQ"
 
 # Project summary to display on homepage.
-summary = "BioASQ organizes challenges on biomedical semantic indexing and question answering (QA). The challenges include tasks relevant to hierarchical text classification, machine learning, information retrieval, QA from texts and structured data, multi-document summarization and many other areas."
+summary = "Development (both back- and front-end), user support and maintance of the platform hosting the challenges [2016 - present]"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
 image_preview = "headers/bioasq_logo.png"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["Biomedical", "Question Answering"]
+tags = ["Biomedical", "NLP"]
 
 # Optional external URL for project (replaces project detail page).
 external_link = ""
@@ -32,6 +32,8 @@ caption = "BioASQ"
 <a href="http://bioasq.org/">Visit BioASQ Challenge Website</a>
 
 ## The Challenge
+
+BioASQ organizes challenges on biomedical semantic indexing and question answering (QA). The challenges include tasks relevant to hierarchical text classification, machine learning, information retrieval, QA from texts and structured data, multi-document summarization and many other areas.
 
 The BioASQ challenge comprises the following tasks.
 

@@ -21,3 +21,6 @@ I am a teaching instructor for the following courses at University X:
 
 - CS101: An intro to computer science
  -->
+ I have been providing teaching assistance at the [Department of Informatics and Telecommunications](http://www.di.uoa.gr/eng) for the following courses:
+ - [Data Mining](http://www.di.uoa.gr/eng/node/1135) (Spring 2019)
+

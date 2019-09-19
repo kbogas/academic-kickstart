@@ -6,7 +6,7 @@ date = 2016-04-27T00:00:00
 title = "DuchenneMap"
 
 # Project summary to display on homepage.
-summary = "Connect the Duchenne world to advance development in DMD healthcare"
+summary = "Project proposal and support (2018-present)"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
 image_preview = "headers/duchennemap_logo.jpg"

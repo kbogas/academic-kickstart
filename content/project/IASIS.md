@@ -1,19 +1,19 @@
 +++
 # Date this page was created.
-date = 2016-04-27T00:00:00
+date = 2019-04-27T00:00:00
 
 # Project title.
 title = "IASIS"
 
 # Project summary to display on homepage.
-summary = "Precision medicine promises to transform the delivery of healthcare to patients."
+summary = "Research and development for the Knowledge Graph and QA component [2017 - present]"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
 image_preview = "headers/iasis.png"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["Biomedical", "Graph"]
+tags = ["Biomedical", "Graph", "Machine Learning", "NLP"]
 
 # Optional external URL for project (replaces project detail page).
 external_link = ""
