@@ -1,3 +1,18 @@
++++
+title = "Coin-changing "
+
+date = 2018-04-20T00:00:00
+lastmod = 2018-09-28T00:00:00
+draft = false
+
+# Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
+authors = ["Konstantinos Bougiatiotis"]
+
+tags = ["Computer Science", "General"]
+summary = "Visiting minimum coin changing an Integer Programming Problem"
++++
+
+
 # Coin-changing (Knapsack problem)
 
 ### Solved as an integer programming problem
