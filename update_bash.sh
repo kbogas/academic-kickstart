@@ -2,7 +2,7 @@
 
 git add .
 git commit -m "Initial commit"
-git push https://kbogas:3486kostas@my_web.biz/file.git -u origin master
+git push https://kbogas:3486kostas@academic-kickstart.biz/file.git -u origin master
 
 hugo
 cd public

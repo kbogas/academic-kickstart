@@ -1,4 +1,6 @@
 public/
+notebooks/
 .idea/
 .pyc
 .sh
+.ipynb
