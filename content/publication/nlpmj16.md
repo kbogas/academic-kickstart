@@ -11,8 +11,8 @@ projects = []
 math = true
 highlight = true
 tags = ['NLP', "Machine Learning"]
-url_poster = [{name = "Poster", url ="publ/NLPMJ_16_poster.pdf"}]
-url_pdf = [{name = "PDF", url ="publ/NLPMJ_16_paper.pdf"}]
+url_custom = [{name = "Poster", url ="publ/NLPMJ_16_poster.pdf"}]
+url_custom = [{name = "PDF", url ="publ/NLPMJ_16_paper.pdf"}]
 [header]
 image = ""
 caption = ""

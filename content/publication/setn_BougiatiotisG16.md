@@ -9,7 +9,7 @@ image_preview = ""
 selected = false
 projects = []
 tags = ["NLP", "Multimedia", "Machine Learning"]
-url_pdf = [{name = "PDF", url ="publ/setn_2016.pdf"}]
+url_custom = [{name = "PDF", url ="publ/setn_2016.pdf"}]
 math = true
 highlight = true
 [header]
