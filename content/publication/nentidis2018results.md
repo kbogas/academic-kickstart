@@ -16,6 +16,5 @@ url_pdf = [{name = "PDF", url ="publ/bioasq_2018.pdf"}]
 [header]
 image = ""
 caption = ""
-
 +++
 

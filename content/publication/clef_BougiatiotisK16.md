@@ -16,6 +16,5 @@ url_code = "https://github.com/kbogas/authorProfPAN16"
 [header]
 image = ""
 caption = ""
-
 +++
 

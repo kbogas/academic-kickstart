@@ -16,6 +16,5 @@ url_pdf = [{name = "PDF", url ="publ/NLPMJ_16_paper.pdf"}]
 [header]
 image = ""
 caption = ""
-
 +++
 
