@@ -14,28 +14,31 @@ summary = "Visiting Coin Change as an Integer-Programming problem"
 
 # Coin-changing (Knapsack problem)
 
-### Solved as an integer programming problem
-
 So a friend of mine was interviewing for a semi-software focused position which had also a time-restricted technical test.
 
 One of the questions asked was something along these lines:
 
 ```
-A vending machine has been recently installed in your work floor!
-Unfortunately, there is a limit in the number of bills it can hold, so the technicians would like a way to give out the minimum amount of change in bills needed.
+A vending machine has been recently installed on your work floor!
+Unfortunately, there is a limit on the number of bills it can hold, so the technicians would like a way to give out the minimum amount of change in bills needed.
 So, your task is the following:
-Write a program that given an initial amount of money (the change to be returned), find the minimum number of bills (of certain denominaions) that add up to it.
+Write a program that given an initial amount of money (the change to be returned), find the minimum number of bills (of certain denominations) that add up to it.
 Our machine can give back only bills of 1,2,5 and 10$!
 ```
-Pretty straightforward question that many CS students have already seen during their Algorithms101 or CS101 classes.
+A pretty straightforward problem that many CS students have already seen during their Algorithms101 or CS101 classes.
 
 
 It was also  featured in xkcd:
 ![Xkcd Image](https://imgs.xkcd.com/comics/np_complete.png)
 
-This problem is essentialy a variation of a [Knapsack Problem](https://en.wikipedia.org/wiki/Knapsack_problem). This is a more [relevant lemma](https://en.wikipedia.org/wiki/Change-making_problem) but there is an unlimited amount of blogs, posts etc on this matter, so I won't delve much on the techincal details.
+This problem is essentially a variation of a [Knapsack Problem](https://en.wikipedia.org/wiki/Knapsack_problem). This is a more [relevant lemma](https://en.wikipedia.org/wiki/Change-making_problem) but there is an unlimited amount of blogs, posts etc on this matter and I won't delve much on the technical details.
 
-I was once again intrigued by it trying to come-up with a fast solution. Although, I knew that Dynamic Programming was the way to go with this problem, my skills regarding classical CS and algos are a bit rusty, so it would take me some time to remember the inner-workings of the approach.. (P.S.: I should head over to [GFG](https://www.geeksforgeeks.org/dynamic-programming/) to strech out my CS skills)
+As we were discussing it, I was trying to come up with a fast solution. Although I knew that Dynamic Programming was the way to go with this problem, my skills regarding classical CS and algos are a bit rusty, so it would take me some time to remember the inner-workings of the approach..
+
+
+(Note to self: Head over to [GFG](https://www.geeksforgeeks.org/dynamic-programming/) to strech out!)
+
+### Solved as an integer programming problem
 
 Thus, I opted for an optimization approach. As, we would like to minimize the number of bills given back, the obvious choice would be an [Integer Programming](https://en.wikipedia.org/wiki/Integer_programming) approach, as the count of each denomination will be *non-negative integers*.
 
@@ -53,14 +56,14 @@ $$ min\sum{X}$$
 
 with the restraints:
 
-- $x >= 0, \forall x \in X$ (we need a non-negative amount of each denomination)
+- $x \geq 0, \forall x \in X$ (we need a non-negative amount of each denomination)
 - $Χ\cdot w^Τ = C$ (they must sum up to the needed cash)
 
 That's it. We have formulated the problems and the constraints and we just need the appropriate solver to run the procedure. For my approach python 3 is used.
 
 We will rely on the [cvxopt](https://cvxopt.org/) package.
 
-We will also need the GPLK support for the solver.
+We will also need the GLPK_MI package for the solver, as the ECOS_BB is not working correctly.
 Check out [the docs on how to do so](https://www.cvxpy.org/install/index.html)
 
 
@@ -249,15 +252,15 @@ plt.show()
 Well as expected the *RE* method is by far the slowest one. In fact it was so slow, I had to interrupt it from running for all test cases. So, we won't focus on this one.
 
 
-Regarding the two main-contesters we can see than the _DP_ one seems to be faster and not really affected by the amount of cash to be returned. We can see a hint of linear dependence to the cash to be returned but this is more of a guess/intuition rather than an insight gained from the graph.
+Regarding the two main-contesters, we can see than the _DP_ one seems to be faster and not affected by the amount of cash to be returned. We can see a hint of linear dependence to the cash to be returned but this is more of a guess/intuition rather than an insight gained from the graph.
 
-This is somewhat expected as <u>Dynamic Programming works really well when the states table is small</u>. This happens because the states that have to be visited are small in number and it can be easy to navigate through them to find the optimal solution,
+This is somewhat expected as <u>Dynamic Programming works well when the states table is small</u>. This happens because the states that have to be visited are small in number and it can be easy to navigate through them to find the optimal solution.
 
-On the other hand, the *IP* method seems to take up some time for the initial small values, but then the time needed seems constant regardless the value of the cash. However, this constant plateau is still higher than the time needed for the *DP* method.
+On the other hand, the *IP* method seems to take up some time for the initial small values, but then the time needed seems constant regardless of the value cash returned. However, this constant plateau is still worse than the time needed for the *DP* method.
 
 But what happens, when we change the scale of things?
 
-Let's run another test suite with much larger values and evaluate the results between the *DP* and *IP* method.
+Let's run another experiment with much larger values and evaluate the results of the *DP* and *IP* methods.
 
 
 ```python
@@ -305,15 +308,15 @@ Aha!
 
 As we can see the roles have drastically changed.
 
-This is expected as the overall time needed for *DP* based approach would be something along along the lines of:
+This is expected as the overall time needed for *DP* based approach is along the lines of:
 
 Number-of-states $\times$ evaluation-time-per-state
 
 With constant evaluation time per state, as we increase the possible number of states (the value to be returned) we see a linear increase to the time needed.
 
-On the other hand, the *IP* approach does not suffer from such issues. We see a constant time of less than 0.1 seconds no matter the value of cash needed.
+On the other hand, the *IP* approach does not suffer from such issues. We see a constant time of $\approx0.04$ seconds regardless of the cash needed.
 
-This is mainly because of the solver [GNU Linear Programming Kit- GLPK](https://www.gnu.org/software/glpk/#TOCdocumentation) whic is optimized for large scale linear problems.
+This is to be expected as the only thing that changes in the optimization problem is the constant of the CASH needed for the second contstraint. As such, the performance would be the same regardless of the value returned. Moreover, the solver [GNU Linear Programming Kit- GLPK](https://www.gnu.org/software/glpk/#TOCdocumentation) used is very efficient in mixed integer programs.
 
 
 ## Conclusion
@@ -322,15 +325,15 @@ So a few final words regarding this post.
 
 We visited the problem of Coin-Changing and formulated it as an *Integer Programming* problem. We evaluated a solver on this problem, alongside some classic recursive and *dynamic programming* procedures. Finally, we performed the two tests, on different scales of input to benchmark the approaches in a simple way.
 
-The analysis done here is by no means perfect. I am sure there are more efficient implementations for both the *IP* and *DP* approaches presented here, but this was more of a proof-of-concept and thought provoking experimenation rather than a complete benchmark.
+The analysis done here is by no means perfect. I am sure there are more efficient implementations for both the *IP* and *DP* approaches presented here, but this was more of a proof-of-concept and thought-provoking experimenation rather than a complete benchmark.
 
 I hope to have some more time to check the initial performance bump of the *IP* method (for values of CASH < 200) that seems rather unnatural to me.
 
-As a tl;dr closing remarks I would state the following:
+As a *tl;dr closing remarks* I would state the following:
 
-- If you'd like you could formulate the coin-change problem as an *IP* problem. This is an approach I have not yet seen, although to me seems very natural.
-- Is it worth the effort? Firstly, the effort in terms of line of code is not so big, as you've already seen. Secondly, regarding the results, if the coin-change machine in your workplace is expected to give out change in the scale of > 10000$, then it is crucial. If not, don't bother with it.
-- With regards to the interview itself, I think it would be funny to see the reaction of the technical supervisor when confronted with this kind of solution/approach. I would give a (+) to the candidate for the originality of the approach though.
+- If you'd like you could formulate the coin-change problem as an *IP* problem. This is an approach I have not yet seen.
+- Is it worth the effort? Firstly, the effort in terms of lines of code is not so big, as demonstrated. Secondly, regarding the results, if the coin-change machine in your workplace is expected to give out change in the scale of > 10000$, then it is crucial. If not, don't bother with it.
+- With regards to the interview itself, I think it would be interesting to see the reaction of the technical supervisor when presented with this approach. If it were me, I would give a (+) to the candidate for the originality of the idea though.
 - Finally, as a note to self, do not forget to brush-up your knowledge on simple CS/Algo problems before heading in a technical interview.
 
-If you have any comments or spot any mistakes/error, feel free to contact me or leave a comment!
+If you have any comments or spot any mistakes/errors, feel free to contact me or leave a comment!
