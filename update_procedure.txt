@@ -25,3 +25,23 @@ python3 python2hugo.py -i bibl.bib
 
 # AND COPY OVER THE GENERATED FILES FROM ./publ to the content publications files
 # You can also add tags and projects to each one!
+
+
+# ALSO HUGO NEEDS AN EMPTY LINE BETWEEN THE PRECEDING PARAGRAPH AND A MARKDOWN LIST. IE:
+
+# THIS WORKS
+
+Colors:
+
+* Red
+* Green
+* Blue
+
+# THIS DOES NOT
+Colors:
+* Red
+* Green
+* Blue
+
+
+### FOR THE NOTEBOOK POSTS 

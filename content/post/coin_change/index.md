@@ -243,7 +243,7 @@ plt.show()
 ```
 
 
-![png](./output_13_0.png)
+![png](./output_1.png)
 
 
 Well as expected the *RE* method is by far the slowest one. In fact it was so slow, I had to interrupt it from running for all test cases. So, we won't focus on this one.
@@ -298,7 +298,7 @@ plt.show()
 ```
 
 
-![png](./output_16_0.png)
+![png](./output_2.png)
 
 
 Aha!
