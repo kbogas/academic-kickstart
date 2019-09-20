@@ -3,7 +3,7 @@
 date = 2019-04-27T00:00:00
 
 # Project title.
-title = "IASIS"
+title = "IASIS - Big Data to Support Precision Medicine and Public Health Policy"
 
 # Project summary to display on homepage.
 summary = "Research and development for the Knowledge Graph and QA component [2017 - present]"

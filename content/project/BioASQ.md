@@ -3,7 +3,7 @@
 date = 2018-04-27T00:00:00
 
 # Project title.
-title = "BioASQ"
+title = "BioASQ - Large-scale biomedical semantic indexing and question answering competition"
 
 # Project summary to display on homepage.
 summary = "Development (both back- and front-end), user support and maintance of the platform hosting the challenges [2016 - present]"

@@ -3,7 +3,7 @@
 date = 2015-04-27T00:00:00
 
 # Project title.
-title = "Hobbit"
+title = "HOBBIT - Holistic Benchmarking of Big Linked Data"
 
 # Project summary to display on homepage.
 summary = "Research and development for the Knowledge Graph [2017 - 2018]"
@@ -25,7 +25,7 @@ math = false
 # Optional featured image (relative to `static/img/` folder).
 [header]
 image = "headers/Hobbit_Logo.png"
-caption = "Hobbit"
+caption = "HOBBIT"
 
 +++
 

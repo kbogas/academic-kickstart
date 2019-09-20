@@ -3,7 +3,7 @@
 date = 2017-04-27T00:00:00
 
 # Project title.
-title = "REVEAL"
+title = "REVEAL - Social Media Verification"
 
 # Project summary to display on homepage.
 summary = "Research and development for Machine Learning [2015 - 2017]"

@@ -29,7 +29,7 @@ caption = "DuchenneMap"
 
 +++
 
-<a href="https://www.duchennemap.org/">Visit DucheneMap and join the cause!</a>
+<a href="https://www.duchennemap.org/">Visit DuchenneMap and join the cause!</a>
 
 Duchenne Map empowers DMD patients and families to make better healthcare decisions.
 
