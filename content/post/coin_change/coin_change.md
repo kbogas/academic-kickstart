@@ -1,17 +1,16 @@
 +++
-title = "Coin-changing "
+title = "Coin Change"
 
-date = 2018-04-20T00:00:00
-lastmod = 2018-09-28T00:00:00
+date = 2019-09-20T00:00:00
+lastmod = 2019-09-20T00:00:00
 draft = false
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Konstantinos Bougiatiotis"]
+# authors = ["Konstantinos Bougiatiotis"]
 
-tags = ["Computer Science", "General"]
-summary = "Visiting minimum coin changing an Integer Programming Problem"
+tags = ["General", "CS"]
+summary = "Visiting Coin Change as an Integer-Programming problem"
 +++
-
 
 # Coin-changing (Knapsack problem)
 
@@ -43,20 +42,15 @@ Thus, I opted for an optimization approach. As, we would like to minimize the nu
 
 
 Let:
-
- - $w \in \mathbb{Z}^N$, be the array with the $N$ available denominations
- - $X \in \mathbb{Z}^N$, be the count of each denomination returned
- - $C \in \mathbb{Z}$, be the wanted amount of cash to be returned
+- $w \in \mathbb{Z}^N$, be the array with the $N$ available denominations
+- $X \in \mathbb{Z}^N$, be the count of each denomination returned
+- $C \in \mathbb{Z}$, be the wanted amount of cash to be returned
 
 The problem formulation would be :
-
 $$ min\sum{X}$$
-
-
 with the restraints:
-
- - $ x >= 0, \forall x \in X$ (we need a non-negative amount of each denomination)
- - $ Χ\cdot w^Τ = C$ (they must sum up to the needed cash)
+- $x >= 0, \forall x \in X$ (we need a non-negative amount of each denomination)
+- $Χ\cdot w^Τ = C$ (they must sum up to the needed cash)
 
 That's it. We have formulated the problems and the constraints and we just need the appropriate solver to run the procedure. For my approach python 3 is used.
 
@@ -245,7 +239,7 @@ plt.show()
 ```
 
 
-![png](/static/coin_change_imgs/output_13_0.png)
+![png](output_13_0.png)
 
 
 Well as expected the *RE* method is by far the slowest one. In fact it was so slow, I had to interrupt it from running for all test cases. So, we won't focus on this one.
@@ -300,7 +294,7 @@ plt.show()
 ```
 
 
-![png](coin_change_imgs/output_16_0.png)
+![png](output_16_0.png)
 
 
 Aha!
@@ -329,9 +323,9 @@ The analysis done here is by no means perfect. I am sure there are more efficien
 I hope to have some more time to check the initial performance bump of the *IP* method (for values of CASH < 200) that seems rather unnatural to me.
 
 As a tl;dr closing remarks I would state the following:
- - If you'd like you could formulate the coin-change problem as an *IP* problem. This is an approach I have not yet seen, although to me seems very natural.
- - Is it worth the effort? Firstly, the effort in terms of line of code is not so big, as you've already seen. Secondly, regarding the results, if the coin-change machine in your workplace is expected to give out change in the scale of > 10000$, then it is crucial. If not, don't bother with it.
- - With regards to the interview itself, I think it would be funny to see the reaction of the technical supervisor when confronted with this kind of solution/approach. I would give a (+) to the candidate for the originality of the approach though.
- - Finally, as a note to self, do not forget to brush-up your knowledge on simple CS/Algo problems before heading in a technical interview.
+- If you'd like you could formulate the coin-change problem as an *IP* problem. This is an approach I have not yet seen, although to me seems very natural.
+- Is it worth the effort? Firstly, the effort in terms of line of code is not so big, as you've already seen. Secondly, regarding the results, if the coin-change machine in your workplace is expected to give out change in the scale of > 10000$, then it is crucial. If not, don't bother with it.
+- With regards to the interview itself, I think it would be funny to see the reaction of the technical supervisor when confronted with this kind of solution/approach. I would give a (+) to the candidate for the originality of the approach though.
+- Finally, as a note to self, do not forget to brush-up your knowledge on simple CS/Algo problems before heading in a technical interview.
 
 If you have any comments or spot any mistakes/error, feel free to contact me or leave a comment!
