@@ -1,6 +1,6 @@
 +++
 title = "An exploratory analysis of news trends on twitter"
-date = "2016-01-01"
+date = "2015-06-01"
 authors = ["K. Bougiatiotis","A. Krithara","G. Paliouras","G. Giannakopoulos"]
 publication_types = ["1"]
 publication = "_Natural Language Processing meets Journalism, Proceedings of the Workshop, IJCAI 2016, New York, USA, July 9-11,2016_"
@@ -10,10 +10,12 @@ selected = false
 projects = []
 math = true
 highlight = true
+tags = ['NLP', "Machine Learning"]
+url_poster = [{name = "Poster", url ="publ/NLPMJ_16_poster.pdf"}]
+url_pdf = [{name = "PDF", url ="publ/NLPMJ_16_paper.pdf"}]
 [header]
 image = ""
 caption = ""
-tags = ["Graph"]
-projects = ["Graph"]
+
 +++
 
