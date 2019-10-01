@@ -87,7 +87,7 @@ def solve_with_ip(denominations, CASH):
     CASH = cp.Constant(CASH)
 
     # Variables containing the number of the coins to be returned for each denominator
-    # The size of this must be equal to the denominations w
+    # The size of this must be equal to the denominatios w
     x = cp.Variable((1, w.shape[0]), integer=True)
 
     # We want to minimize the total number of coins returned
