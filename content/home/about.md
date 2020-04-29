@@ -25,7 +25,7 @@ weight = 5
    year = 2019
 
 [[education.courses]]
-  course = "Diploma (5-year old, B.Sc + M.Sc combined),in Electrical and Computer Engineering, Grade: 8.05/10 (Thesis 10/10 . Available [in Greek here](https://kbogas.github.io/files/Bougiatiotis_Diploma_Thesis_GR.pdf))"
+  course = "Diploma (5-year old, B.Sc + M.Sc combined),in Electrical and Computer Engineering, Grade: 8.05/10 (Thesis 10/10)"
   institution = "National Technical University, Athens, Greece"
   year = 2009
 
@@ -44,5 +44,4 @@ I work along the Software and Knowledge Engineering Laboratory and I conduct res
 I am mostly interested in machine learning, data mining and NLP. Currently, my focus is graph neural networks and their applications on heterogenous/multi-relational graphs, mainly on bio-related data.
 
 
-I hold a Diploma (5-years combined B.Sc. and M.Sc.) from the school of [Electrical and Computer Engineering](https://www.ece.ntua.gr/en) at the [National Technical University of Athens](https://www.ntua.gr/en/).
-
+I hold a Diploma (5-years combined B.Sc. and M.Sc.) from the school of [Electrical and Computer Engineering](https://www.ece.ntua.gr/en) at the [National Technical University of Athens](https://www.ntua.gr/en/). My Diploma Thesis was on a content-aware recommender system for movies based on topic modeling of their subtitles. You can find a copy of it [in Greek here](https://kbogas.github.io/files/Bougiatiotis_Diploma_Thesis_GR.pdf)
