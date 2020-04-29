@@ -25,7 +25,7 @@ weight = 5
    year = 2019
 
 [[education.courses]]
-  course = "Diploma (5-year old, B.Sc + M.Sc combined),in Electrical and Computer Engineering, Grade: 8.05/10 (Thesis 10/10)"
+  course = "Diploma (5-year old, B.Sc + M.Sc combined),in Electrical and Computer Engineering, Grade: 8.05/10 (Thesis 10/10 . Available [in Greek here](https://kbogas.github.io/files/Bougiatiotis_Diploma_Thesis_GR.pdf))"
   institution = "National Technical University, Athens, Greece"
   year = 2009
 

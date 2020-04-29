@@ -70,10 +70,10 @@ enableGitInfo = false
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
-  email = "bogas.ko@gmail.com"
+  email = "bogas.ko[at]gmail.com"
   address = "Building 1 Room 1, NCSR 'Demokritos', Athens, Greece, Ag. Paraskevi, 15310, Athens, Greece"
   office_hours = "Every day 11:00-19:00, email for appointment"
-  phone = "+306931693844"
+  phone = "+30 210 650 3172"
   skype = "bogas_k"
   telegram = ""
 

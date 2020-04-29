@@ -206,7 +206,7 @@ print(solve_with_greedy(denominations, 15))
 print(solve_with_dp(denominations, 15))
 ```
 
-Ok, so everything is working as it should. Let's run a test-suite and see how this goes
+OK, so everything is working as it should. Let's run a test-suite and see how this goes
 
 
 ```python
@@ -252,7 +252,7 @@ plt.show()
 Well as expected the *RE* method is by far the slowest one. In fact it was so slow, I had to interrupt it from running for all test cases. So, we won't focus on this one.
 
 
-Regarding the two main-contesters, we can see than the _DP_ one seems to be faster and not affected by the amount of cash to be returned. We can see a hint of linear dependence to the cash to be returned but this is more of a guess/intuition rather than an insight gained from the graph.
+Regarding the two main-contenders, we can see than the _DP_ one seems to be faster and not affected by the amount of cash to be returned. We can see a hint of linear dependence to the cash to be returned but this is more of a guess/intuition rather than an insight gained from the graph.
 
 This is somewhat expected as <u>Dynamic Programming works well when the states table is small</u>. This happens because the states that have to be visited are small in number and it can be easy to navigate through them to find the optimal solution.
 
@@ -316,7 +316,7 @@ With constant evaluation time per state, as we increase the possible number of s
 
 On the other hand, the *IP* approach does not suffer from such issues. We see a constant time of $\approx0.04$ seconds regardless of the cash needed.
 
-This is to be expected as the only thing that changes in the optimization problem is the constant of the CASH needed for the second contstraint. As such, the performance would be the same regardless of the value returned. Moreover, the solver [GNU Linear Programming Kit- GLPK](https://www.gnu.org/software/glpk/#TOCdocumentation) used is very efficient in mixed integer programs.
+This is to be expected as the only thing that changes in the optimization problem is the constant of the CASH needed for the second constraint. As such, the performance would be the same regardless of the value returned. Moreover, the solver [GNU Linear Programming Kit- GLPK](https://www.gnu.org/software/glpk/#TOCdocumentation) used is very efficient in mixed integer programs.
 
 
 ## Conclusion
@@ -325,7 +325,7 @@ So a few final words regarding this post.
 
 We visited the problem of Coin-Changing and formulated it as an *Integer Programming* problem. We evaluated a solver on this problem, alongside some classic recursive and *dynamic programming* procedures. Finally, we performed the two tests, on different scales of input to benchmark the approaches in a simple way.
 
-The analysis done here is by no means perfect. I am sure there are more efficient implementations for both the *IP* and *DP* approaches presented here, but this was more of a proof-of-concept and thought-provoking experimenation rather than a complete benchmark.
+The analysis done here is by no means perfect. I am sure there are more efficient implementations for both the *IP* and *DP* approaches presented here, but this was more of a proof-of-concept and thought-provoking experimentation rather than a complete benchmark.
 
 I hope to have some more time to check the initial performance bump of the *IP* method (for values of CASH < 200) that seems rather unnatural to me.
 
