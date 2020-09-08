@@ -7,7 +7,8 @@ publication = "_CLEF (Working Notes)_"
 publication_short = ""
 image_preview = ""
 selected = false
-projects = ["NLP"]
+projects = []
+tags = ["NLP"]
 math = true
 highlight = true
 [header]

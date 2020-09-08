@@ -7,7 +7,8 @@ publication = "_Proceedings of the 2016 IJCAI Workshop on Natural Language Proce
 publication_short = ""
 image_preview = ""
 selected = true
-projects = ["NLP"]
+projects = []
+tags = ["NLP"]
 math = true
 highlight = true
 [header]

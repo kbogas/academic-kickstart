@@ -24,5 +24,7 @@ I am a teaching instructor for the following courses at University X:
  I have been providing teaching assistance at the [Department of Informatics and Telecommunications](http://www.di.uoa.gr/eng) for the following courses:
 
 
- - [Data Mining](http://www.di.uoa.gr/eng/node/1135) (Spring 2019)
+ - [Data Mining](https://www.di.uoa.gr/en/studies/undergraduate/292) (Spring 2019)
+ - [Artificial Intelligence](http://cgi.di.uoa.gr/~ys02/) (Autumn 2019)
+ - [Data Mining](https://www.di.uoa.gr/en/studies/undergraduate/292) (Spring 2029)
 
