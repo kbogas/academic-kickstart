@@ -6,9 +6,8 @@ publication_types = ["2"]
 publication = "_Expert Systems with Applications_"
 publication_short = ""
 image_preview = ""
-selected = true
+selected = false
 projects = ["Machine Learning"]
-url_custom = [{name = "DOI", url = "http://dx.doi.org/https://doi.org/10.1016/j.eswa.2017.11.050"}]
 math = true
 highlight = true
 [header]

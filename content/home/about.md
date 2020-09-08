@@ -38,10 +38,9 @@ Welcome to my personal page!
 
 
 I am a Ph.D. candidate in Computer Science and my primary focus is
-data science and machine learning. I hold a research associate position with the [Institute of Informatics and Telecommunications](https://www.iit.demokritos.gr/) of the [National Center for Scientific Research “Demokritos”](http://www.demokritos.gr/), where I am involved in international projects.
+data science and machine learning. For the past 5 years, I hold a research associate position with the [Institute of Informatics and Telecommunications](https://www.iit.demokritos.gr/) of the [National Center for Scientific Research “Demokritos”](http://www.demokritos.gr/), where I was involved in international projects. 
 
-I work along the Software and Knowledge Engineering Laboratory and I conduct research under the guidance of [Dr. Georgios Paliouras](http://users.iit.demokritos.gr/~paliourg/).
-I am mostly interested in machine learning, data mining and NLP. Currently, my focus is graph neural networks and their applications on heterogenous/multi-relational graphs, mainly on bio-related data.
+Currently, I am with the [AI Center of Excellence in Document Intelligence - DICE](https://dice.iit.demokritos.gr/) team focusing on analyzing legal and financial documents. I conduct research under the guidance of [Dr. Georgios Paliouras](http://users.iit.demokritos.gr/~paliourg/). I am mostly interested in machine learning, data mining and NLP. Currently, my focus is graph neural networks and their applications on heterogenous/multi-relational graphs, mainly on bio-related data.
 
 
 I hold a Diploma (5-years combined B.Sc. and M.Sc.) from the school of [Electrical and Computer Engineering](https://www.ece.ntua.gr/en) at the [National Technical University of Athens](https://www.ntua.gr/en/). My Diploma Thesis was on a content-aware recommender system for movies based on topic modeling of their subtitles. You can find a copy of it [in Greek here](https://kbogas.github.io/files/Bougiatiotis_Diploma_Thesis_GR.pdf)
