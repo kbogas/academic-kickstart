@@ -7,7 +7,8 @@ publication = "_Natural Language Processing meets Journalism, Proceedings of the
 publication_short = ""
 image_preview = ""
 selected = false
-projects = ["NLP"]
+projects = ["REVEAL"]
+tags = ["NLP", "Machine Learning"]
 math = true
 highlight = true
 [header]

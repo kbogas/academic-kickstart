@@ -7,7 +7,8 @@ publication = "_2019 IEEE 32nd International Symposium on Computer-Based Medical
 publication_short = ""
 image_preview = ""
 selected = false
-projects = ["Graph"]
+projects = []
+tags = ["Machine learning", "Graph"]
 math = true
 highlight = true
 [header]

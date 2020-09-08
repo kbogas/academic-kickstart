@@ -7,7 +7,8 @@ publication = "_arXiv preprint arXiv:1702.04815_"
 publication_short = ""
 image_preview = ""
 selected = false
-projects = ["Machine Learning"]
+projects = []
+tags = ["Machine learning"]
 math = true
 highlight = true
 [header]

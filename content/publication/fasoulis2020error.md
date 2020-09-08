@@ -7,7 +7,8 @@ publication = "_arXiv preprint arXiv:2002.08762_"
 publication_short = ""
 image_preview = ""
 selected = false
-projects = ["Graph"]
+projects = ["IASIS"]
+tags = ["Machine learning", "Graph"]
 math = true
 highlight = true
 [header]

@@ -7,7 +7,8 @@ publication = "_Expert Systems with Applications_"
 publication_short = ""
 image_preview = ""
 selected = false
-projects = ["Machine Learning"]
+projects = []
+tags = ["Machine learning"]
 math = true
 highlight = true
 [header]

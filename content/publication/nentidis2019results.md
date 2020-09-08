@@ -7,7 +7,8 @@ publication = "_Joint European Conference on Machine Learning and Knowledge Disc
 publication_short = ""
 image_preview = ""
 selected = false
-projects = ["NLP"]
+projects = ["BioASQ"]
+tags = ["Biomedical", "Question Answering"]
 math = true
 highlight = true
 [header]

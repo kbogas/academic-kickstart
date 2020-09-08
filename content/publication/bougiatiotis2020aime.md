@@ -7,7 +7,8 @@ publication = "Proceedings of the 2020 International Conference on Artificial In
 publication_short = ""
 image_preview = ""
 selected = true
-projects = ["Graphs"]
+projects = ["IASIS"]
+tags = ["Graph"]
 math = true
 highlight = true
 [header]
